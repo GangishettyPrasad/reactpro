@@ -39,7 +39,7 @@ const Component_react = (props) => {
             <div>
                 <ol>
                     <li>
-                        component in react 1. the component name ist letter must be capital
+                         component name ist letter must be capital
                         whenever export that component its exportable component i.e  importing component in that component its accessing this function
                     </li>
                     <li>

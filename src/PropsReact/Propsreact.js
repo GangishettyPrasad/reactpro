@@ -2,9 +2,9 @@ import React from "react"
 
 const Propsreact = ({value,value1,value2}) => {
     console.log("props",value,"props",value1,value2)
-    const a = prompt()
-    const b = value2(a)
-    console.log(b,'function calling and store value')
+    //const a = prompt()
+    // const b = value2(a)
+    console.log('function calling and store value')
     return (
         <>
             <h1 style={{ marginTop: " 30px" }}>Props in React</h1>
