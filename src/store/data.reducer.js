@@ -19,7 +19,11 @@ export const dataReducer = (state = initialState, action) => {
           return state.map((item, index ) =>
             index === action.payload ? { ...item, name: action.name } : item
           ); // Returns a new array with updated name only for the matched index
-    
+          case "changenum":{
+           
+            return state.map((item, index ) =>
+              index === action.payload ? { ...item, num: action.num } : item
+            );}
         default:
           return state;
       }

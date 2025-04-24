@@ -16,6 +16,18 @@ const Component_react = (props) => {
     
       };
 
+      const handleChange1 = (id) => {
+     
+
+        const newName = prompt("Enter new name:"); // Get new name from user
+    if (newName) { // Ensure user didn't cancel or leave empty
+      dispatch({ type: "changenum", payload: id, num: newName });
+    }
+    
+      };
+
+
+
 
     console.log(props ,'react redux props data')
     const [a, setA] = useState('hello')
@@ -75,7 +87,7 @@ const Component_react = (props) => {
                 </ol>
             </div>
             <div>{props.data.map((d,i)=>{
-                   return <li key={i}> <strong>Name:</strong> {d.name} | <strong>Number:</strong> {d.num} | <strong>Village:</strong> {d.village} <button onClick={()=>{handleChange(i)}}>change name  </button></li>
+                   return <li key={i}> <strong>Name:</strong> {d.name} | <strong>Number:</strong> {d.num} | <strong>Village:</strong> {d.village} <button onClick={()=>{handleChange(i)}}>change name  </button> <button onClick={()=>{handleChange1(i)}}>change num  </button> </li>
             })}</div>
 
             
